@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white : hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    
+    --font-family-1: 'Big Shoulders Display', cursive;
+  --font-family-2: 'Lexend Deca', sans-serif; 
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 15px;
+  font-family: var(--font-family-1);
+  background-color: var(--Transparent-white);
+}
+.sedans{
+  background-color:var( --Bright-orange);
+  width:290px;
+  height:450px;
+}
+.suvs{
+  background-color:var(  --Dark-cyan);
+  width:290px;
+  height:450px;
+}
+.luxury{
+  background-color:var( --Very-dark-cyan);
+  width:290px;
+  height:450px;
+}
+.heading{
+  color:var(--Very-light-gray);
+}
+.info{
+color:var( --Transparent-white);
+font-family:var(--font-family-2);
+}
+.btn{
+  font-family: var(--font-family-2);
+  color:var(--Very-light-gray);
+    border: 3px solid white;
+    cursor: pointer;
+}
+.btn:hover{
+  background-color:white;
+  color: var(--Dark-cyan);
+}
+.btn1{
+  font-family: var(--font-family-2);
+  color:var(--Very-light-gray);
+    border: 3px solid white;
+    cursor: pointer;
+}
+.btn1:hover{
+  background-color:white;
+  color: var(--Bright-orange);
+}
+.btn2{
+  font-family: var(--font-family-2);
+  color:var(--Very-light-gray);
+    border: 3px solid white;
+    cursor: pointer;
+}
+.btn2:hover{
+  background-color:white;
+  color: var(--Very-dark-cyan);
+}
+@media (max-width:883px){
+  .box{
+    display: block;
+    max-height:100%;
+    margin:10px 10px ;
+    
+  }
+  .sedans{
+    border-radius: 9px 9px 0px 0px !important;
+  }
+  .luxury{
+    border-radius: 0px 0px 9px 9px !important;
+
+  }
+}
